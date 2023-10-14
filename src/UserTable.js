@@ -4,7 +4,6 @@ const UserTable = () => {
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the JSONPlaceholder API
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((data) => {
